@@ -37,7 +37,7 @@ const Hero = () => {
             Hey, <span className="text-red-500">I am Debparna Ghatak</span>
           </motion.h1>
           <motion.h3
-            className="font-semibold text-xl sm:text-2xl mb-6 h-14"
+            className="font-semibold text-xl sm:text-2xl mb-6 h-14 sm:mb-3"
             initial="hidden"
             animate="visible"
             variants={textVariants}
