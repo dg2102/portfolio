@@ -37,7 +37,7 @@ const Hero = () => {
             Hey, <span className="text-red-500">I am Debparna Ghatak</span>
           </motion.h1>
           <motion.h3
-            className="font-semibold text-xl sm:text-2xl mb-6 h-14 sm:mb-3"
+            className="font-semibold text-xl sm:text-2xl mb-6 h-14 "
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -57,7 +57,7 @@ const Hero = () => {
               delaySpeed={1000}
             />
           </motion.h3>
-          <div className="flex gap-4 items-center justify-center mt-8 sm:mt-2">
+          <div className="flex gap-4 items-center justify-center mt-8 sm:mt-1">
             <Link to="https://github.com/dg2102" target="_blank">
               <button className="p-3 bg-red-700 rounded-full shadow-lg hover:bg-red-800 transition duration-300">
                 GitHub
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           <Social/>
         </div>
-        <div className="flex justify-center items-center mt-12 ">
+        <div className="flex justify-center items-center mt-12 sm:mt-8 ">
           <img
             src={photo}
             alt="Debparna Ghatak"
