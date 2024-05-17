@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-black via-gray-900 to-black px-4 sm:px-6 lg:px-10 py-20">
+    <div id="contact"className="bg-gradient-to-r from-black via-gray-900 to-black px-4 sm:px-6 lg:px-10 py-18">
       <div className="container mx-auto">
         <h1 className="text-4xl p-4 text-center lg:mr-32 font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent heading mb-8 ">
           Contact me.

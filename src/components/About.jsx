@@ -21,7 +21,7 @@ const About = () => {
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center mb-6 md:mb-0 md:w-full lg:w-1/2"
+            className="flex justify-center mb-6 md:mb-0 md:w-full lg:w-1/2  h-fit  "
           >
             <img src={image} alt="image" className="w-64 h-64 md:w-80 md:h-80 " />
           </motion.div>

@@ -66,9 +66,9 @@ const skills=[
 
 const Skills = () => {
   return (
-    <div  className='bg-gradient-to-r from-black via-gray-900 to-black '>
+    <div id="skills"  className='bg-gradient-to-r from-black via-gray-900 to-black '>
 
-        <div id="skills" className=" skill-bg h-92 container mx-auto px-10 text-white text-center pb-20 "> 
+        <div  className=" skill-bg h-92 container mx-auto px-10 text-white text-center pb-20 "> 
         <h1 className="text-4xl p-4 text-center font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent heading mb-8   ">Skills</h1>
         <div className="flex justify-evenly gap-10 ">
         <div className="  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4  gap-10  ">

@@ -11,14 +11,7 @@ const Navbar = () => {
   const [showOption,setShowOption]= useState(false)
   const [showBackground, setShowBackground] = useState(false);
    const showMenu=()=>{
-     return (
-       <div className=" absolute w-full h-screen top-0 right-0">
-
-       <Link to="#" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600">About</Link>
-           <Link to="#" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600">Projects</Link>
-           <Link to="#" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600">About</Link>
-       </div>
-     )
+    
    
    }
   const scrollOffset=()=>{
@@ -39,7 +32,8 @@ const Navbar = () => {
     <div className="mx-auto flex items-center justify-center relative  ">
       <div className={` h-20 w-full flex fixed top-0 justify-between align-middle items-center ${showBackground ? "bg-black shadow-[0_10px_20px_rgba(240,_46,_170,_0.4)]" : "bg-base-200 shadow-[0_20px_50px_rgba(8,_112,_184,_0.6)]" } rounded-full mx-auto px-16  z-40  border-none text-white  `}>
         <div className="logo">
-          <h1 className="mb-5 font-bold text-xl"> PORTFOLIO<span className="text-5xl font-bold text-pink-500 ">.</span></h1>
+         <ScrollLink to="hero" smooth={true} duration={500} className="cursor-pointer">
+         <h1 className="mb-5 font-bold text-xl"> PORTFOLIO<span className="text-5xl font-bold text-pink-500  ">.</span></h1></ScrollLink> 
         </div>
         <div className="links hidden gap items-center sm:hidden md:block">
          {/* <div className="flex mr-2">
@@ -50,11 +44,9 @@ const Navbar = () => {
           }} className={`text-2xl cursor-pointer `}/></div> */}
           <ScrollLink to="about" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold mr-2 cursor-pointer"  smooth={true}
             duration={500}>About</ScrollLink>
-          <ScrollLink to="projects" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold mr-2 cursor-pointer" smooth={true}
-            duration={500} >Projects</ScrollLink>
-          <ScrollLink to="skills" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold mr-2 cursor-pointer" smooth={true}
+            <ScrollLink to="skills" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold mr-2 cursor-pointer" smooth={true}
             duration={500}>Skills</ScrollLink>
-          <ScrollLink
+            <ScrollLink
             to="experience"
             className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold cursor-pointer"
             smooth={true}
@@ -62,6 +54,19 @@ const Navbar = () => {
           >
             Experience
           </ScrollLink>
+          <ScrollLink to="projects" className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold mr-2 cursor-pointer" smooth={true}
+            duration={500} >Projects</ScrollLink>
+          
+          
+          <ScrollLink
+            to="contact"
+            className=" w-20 h-fit p-2 text-center px-2 rounded-xl duration-300 ease-in-out hover:bg-red-600 font-bold cursor-pointer"
+            smooth={true}
+            duration={500}
+          >
+            Contact
+          </ScrollLink>
+          
         </div>
         
         {/* for mobile view */}
@@ -99,7 +104,7 @@ const Navbar = () => {
     SKILLS
   </ScrollLink>
   <ScrollLink
-    to="projects"
+    to="experience"
     className="text-pink-500 font-bold text-center p-4 transition duration-300 ease-in-out cursor-pointer"
     smooth={true}
     duration={500}
@@ -108,7 +113,7 @@ const Navbar = () => {
     EXPERIENCE
   </ScrollLink>
   <ScrollLink
-    to="experience"
+    to="projects"
     className="text-pink-500 font-bold text-center p-4  transition duration-300 ease-in-out cursor-pointer"
     smooth={true}
     duration={500}
@@ -116,6 +121,16 @@ const Navbar = () => {
   >
     PROJECTS
   </ScrollLink>
+  <ScrollLink
+    to="contact"
+    className="text-pink-500 font-bold text-center p-4  transition duration-300 ease-in-out cursor-pointer"
+    smooth={true}
+    duration={500}
+    onClick={() => setShowOption(false)}
+  >
+    CONTACT
+  </ScrollLink>
+  
 </div>
 )}
         </div>
