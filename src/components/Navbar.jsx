@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className="mx-auto flex items-center justify-center relative  ">
-      <div className={` h-18 w-full flex fixed top-0 justify-between align-middle items-center ${showBackground ? "bg-black shadow-[0_10px_20px_rgba(240,_46,_170,_0.4)]" : "bg-base-200 shadow-[0_20px_50px_rgba(8,_112,_184,_0.6)]" } rounded-full mx-auto px-16  z-40  border-none text-white  `}>
+      <div className={` h-16 w-full flex fixed top-0 justify-between align-middle items-center ${showBackground ? "bg-black shadow-[0_10px_20px_rgba(240,_46,_170,_0.4)]" : "bg-base-200 shadow-[0_20px_50px_rgba(8,_112,_184,_0.6)]" } rounded-full mx-auto px-16  z-40  border-none text-white  `}>
         <div className="logo">
          <ScrollLink to="hero" smooth={true} duration={500} className="cursor-pointer">
          <h1 className="mb-5 font-bold text-xl"> PORTFOLIO<span className="text-5xl font-bold text-pink-500  ">.</span></h1></ScrollLink> 
