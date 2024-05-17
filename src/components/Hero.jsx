@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           <Social/>
         </div>
-        <div className="flex justify-center items-center mt-12 lg:pt-20">
+        <div className="flex justify-center items-center mt-12 lg:pt-20 sm:mt-8">
           <img
             src={photo}
             alt="Debparna Ghatak"
