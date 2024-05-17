@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.bg-glass {
+ 
+  background: rgba(147, 143, 143, 0.2); /* Semi-transparent background */
+ 
+  
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border to enhance the glass effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/*  */
+.gradient-text {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-hover:hover {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.img{
+  
+    filter: grayscale(90%);
+    backdrop-filter: blur(10px); 
+
+}
+/* .about::before{
+  content: "";
+  position: absolute;
+  height: full ;
+  width: full;
+  border: #ff7e5f;
+  padding: 30px;
+  top: 80px;
+  background-color: #185a9d;
+  z-index: -1;
+} */
+.heading {
+  position: relative;
+  background: linear-gradient(to right, #4299e1, #2b6cb0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.heading::after {
+   position: absolute;
+   content: '';
+   height: 5px;
+   background-color: pink;
+ /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+   bottom: 4px; }
+   .card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+  }
+  
+  .card:hover::after {
+      opacity: 0.5;
+  }
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+   display: flex;
+   justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 50;
+    bottom: 0;
+    z-index: -1;
+    
+ }
+
