@@ -26,7 +26,7 @@ const Hero = () => {
         loop
         className="absolute inset-0 w-full h-full object-cover sm:h-80"
       ></video>
-      <div className=" h-full z-10 flex flex-col items-center justify-center w-full  px-8 py-10 sm:px-4  md:px-8 lg:px-16 bg-black bg-opacity-0 lg:flex-row lg:gap-36 ">
+      <div className=" h-full z-10 flex flex-col items-center justify-center w-full  px-8 py-6 sm:px-4  md:px-8 lg:px-16 bg-black bg-opacity-0 lg:flex-row lg:gap-36 ">
         <div className="flex flex-col items-center text-center space-y-6">
           <motion.h1
             className="font-extrabold text-4xl sm:text-5xl lg:pt-28  "
